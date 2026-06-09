@@ -12,8 +12,15 @@ export default function Dashboard() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("prompt sent!")
-    }
+
+        if (!prompt || prompt.trim() === "") {
+            console.log("prompt is empty");
+            alert("Prompt is empty!");
+            return;
+        }
+
+        console.log("prompt sent!");
+    };
 
     return (
         <div>
