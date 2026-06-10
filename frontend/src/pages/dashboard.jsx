@@ -62,7 +62,7 @@ export default function Dashboard() {
 
                 <div className="flex flex-col overflow-y-auto gap-3 p-4 bottom-50">
 
-                    <div className="text-center text-lime-500 py-5">
+                    <div className="text-center text-pink-400 text-opacity-75 py-5">
                         <h1 className="font-serif text-4xl font-bold">Welcome Back!</h1>
                     </div>
                     {messages.map((msg, index) => (
@@ -99,8 +99,9 @@ export default function Dashboard() {
                                     className="w-full resize-none bg-transparent outline-none"
                                 />
 
-                                <button className="bg-blue-500 text-white py-1 px-3 rounded
-                            hover:bg-blue-600 duration-100 h-fit self-end" type="submit">Send</button>
+                                <button className="bg-pink-500 text-white py-1 px-3 rounded
+                            hover:bg-pink-600  hover:scale-105 duration-100 a
+                            active:scale-95 h-fit self-end" type="submit">Send</button>
                             </form>
 
                         </div>
